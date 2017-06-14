@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const helmet = require('helmet');
 
 const {dependencies} = require('./app.module');
-var {mongoose} = require('./db/mongoose');
+var {postgres} = require('./db/postgres');
 var {authenticate} = require('./middleware/authentication');
 var {logger} = require('./middleware/logs');
 var {response} = require('./middleware/response');
